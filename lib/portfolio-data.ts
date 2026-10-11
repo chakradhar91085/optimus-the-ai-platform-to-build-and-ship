@@ -12,8 +12,8 @@ export const profile = {
     "My work spans privacy-aware Graph-RAG with Neo4j and Ollama, content moderation with fine-tuned DistilBERT, and data pipelines on Airflow and Postgres. I won first place at the Membrain AI Hackathon in 2026.",
   ],
   email: "chakradharreddy9559@gmail.com",
-  // Leave empty to hide the résumé button.
-  resumeUrl: "",
+  // Leave empty to show a GitHub button instead of the résumé download.
+  resumeUrl: "/Chakradhar-Reddy-Resume.pdf",
   available: true,
   socials: [
     { name: "GitHub", href: "https://github.com/chakradhar91085" },
@@ -99,7 +99,8 @@ export const experience: { period: string; title: string; org: string; summary: 
     period: "2025 — 2026",
     title: "Promotion Team Leader",
     org: "Brain Bot Club",
-    summary: "Led event branding and visual content, mentored peers, and coordinated the promotion team.",
+    summary:
+      "Lead the club's design work (posters, event branding and visual content), mentor peers, and ran a session on how Gibberlink works.",
   },
   {
     period: "2023 — 2027",
@@ -107,5 +108,11 @@ export const experience: { period: string; title: string; org: string; summary: 
     org: "CMR Institute of Technology, Bengaluru",
     summary:
       "CGPA 8.88. Mini Project Winner three semesters running (2023–2024). Took part in Repogenesis at BMSCE and Smart India Hackathon (2025).",
+  },
+  {
+    period: "Certifications",
+    title: "NPTEL Cloud Computing",
+    org: "Silver Elite, 2026",
+    summary: "Also completed Google Prompting Essentials Specialization (Coursera) and The Complete Python Developer (Udemy).",
   },
 ];
