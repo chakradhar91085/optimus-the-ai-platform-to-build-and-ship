@@ -81,12 +81,23 @@ export function Hero() {
               View my work
               <ArrowUpRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-            <a
-              href={profile.resumeUrl}
-              className="inline-flex items-center h-14 px-8 text-base rounded-full border border-white/20 text-[#f2efe9] hover:bg-white/5 transition-colors"
-            >
-              Download résumé
-            </a>
+            {profile.resumeUrl ? (
+              <a
+                href={profile.resumeUrl}
+                className="inline-flex items-center h-14 px-8 text-base rounded-full border border-white/20 text-[#f2efe9] hover:bg-white/5 transition-colors"
+              >
+                Download résumé
+              </a>
+            ) : (
+              <a
+                href={profile.socials[0].href}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center h-14 px-8 text-base rounded-full border border-white/20 text-[#f2efe9] hover:bg-white/5 transition-colors"
+              >
+                GitHub
+              </a>
+            )}
           </div>
         </div>
       </div>

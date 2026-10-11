@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const navLinks = [
   { name: "About", href: "#about" },
   { name: "Work", href: "#work" },
-  { name: "Experience", href: "#experience" },
+  { name: "Journey", href: "#journey" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -95,9 +95,9 @@ export default function PortfolioPage() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="relative border-t border-white/10">
+      <section id="journey" className="relative border-t border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-24 lg:py-32">
-          <SectionLabel index="03">Experience</SectionLabel>
+          <SectionLabel index="03">Journey</SectionLabel>
           <ol className="space-y-12">
             {experience.map((e) => (
               <li key={`${e.title}-${e.period}`} className="grid lg:grid-cols-12 gap-2 lg:gap-8">
